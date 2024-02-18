@@ -47,13 +47,3 @@ def analytics(request):
         "rows": rows
     }
     return render(request, "analytics.html", context)
-
-
-def task(request):
-    context={
-        'name':['Deepak Dass', 'Sumit Verma', 'xyz'],
-        'company' :'XYZ Tech'
-
-    }
-    return render(request, 'task.html',context)
-
